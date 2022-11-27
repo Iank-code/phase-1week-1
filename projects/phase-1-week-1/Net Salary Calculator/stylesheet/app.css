@@ -1,0 +1,129 @@
+/* removing the defaults */
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* basic styling of the body*/
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(15, 32, 32);
+    color: white;
+    overflow: hidden;
+}
+/* styling the button and giving it some simple hover
+styles*/
+button{
+    background: transparent;
+    color: white;
+    font-weight: 750;
+    border: 1px solid white;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 30px;
+    transition: 0.15s ease-in-out;
+}
+button:hover{
+    background: transparent;
+    color: red;
+    font-weight: 750;
+    box-shadow: 2 2 2 2 white;
+    border: 1px solid red;
+}
+/* global style for all input el */
+input{
+    outline: none;
+}
+/* styles the container that houses both column1 and column2*/
+body .overallColumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* styles column 1 and its elements */
+body .overallColumn .column2{
+    margin-right: 20px;
+}
+/* styling all span located in column */
+body .overallColumn .column2 span{
+    border-radius: 8px;
+    padding: 5px 35px;
+    background: white;
+    margin-top: 8px;
+    height: 25px;
+    color: black;
+}
+/* styling the button */
+body header, button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+/* giving h1 red color */
+body header h1{
+    color: red;
+}
+/* basic style */
+body .container{
+    margin-left: 20px;
+}
+body .container h3{
+    margin-top: 16px;
+}
+body .container .net{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: baseline;
+}
+body .container .net input{
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 800;
+    height: 25px;
+    margin-left: 10px;
+}
+body .container .year{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+/* making all checkbox and input to be on the same line
+with its h3*/
+body .container .year, .mortgage,
+.insurance, .homeOwnership{
+    display: flex;
+    align-items: baseline;
+}
+/* styling where 'year of taxation' is located */
+body .container .dropDown input{
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    margin-left: 12px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* aligning items in columns */
+body .container .paymentPeriod{
+    display: flex;
+    flex-direction: column;
+}
+/* aligning items in rows */
+body .container .paymentPeriod .month, .annually, .mortgage, .insurance,
+.homeOwnership
+{
+    display: flex;
+    flex-direction: row;
+}
+body .container .paymentPeriod > div{
+    cursor: pointer;
+    margin-top: 15px;
+}

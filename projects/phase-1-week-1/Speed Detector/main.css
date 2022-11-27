@@ -1,0 +1,67 @@
+/* removing default styling */
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* basic body styling */
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* styling the container that houses everything */
+body .container{
+    display: flex;
+    flex-direction: column;
+}
+/* styling where the points will be displayed */
+body .container .points{
+    margin-bottom: 12px;
+}
+/* styling the h3 */
+body .container .points h3{
+    float: right;
+}
+/* aligning both the input and the button in a
+column order */
+body .container .input-section{
+    display: flex;
+    flex-direction:column;
+}
+/* styling the input section */
+body .container .input-section input{
+    margin-bottom: 5px;
+    height: 20px;
+    border-radius: 6px;
+    border-style: inset;
+    outline: none;
+    text-align: center;
+    border:  1px solid green;
+    color: green;
+    font-weight: 600;
+}
+/* giving the placeholder a green color */
+body .container .input-section input::placeholder{
+    color: green;
+}
+/* styling the button */
+button{
+    cursor: pointer;
+    width: 65%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: black;
+    border-color: black;
+    transition: 0.22s ease-in-out;
+}
+button:hover{
+    background: black;
+    font-weight: lighter;
+    color: #fff;
+
+}

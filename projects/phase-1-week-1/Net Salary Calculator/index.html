@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Salary Calculator</title>
+
+    <link rel="stylesheet" href="./stylesheet/app.css">
+    <script defer src="./javascript/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Net Salary Calculator</h1>
+    </header>
+    <div class="container">
+        <!-- Here we are separating the 2 div so that
+        we can also have the result side -->
+        <div class="overallColumn">
+            <div class="column1">
+                <div class="year">
+                    <h3>Year of taxation</h3>
+                    <div class="dropDown">
+                        <input type="text" value="2022" id="year-input" readonly>
+                    </div>
+                </div>
+        
+                <div class="paymentPeriod">
+                    <h3>Payment Period</h3>
+        
+                    
+                    <div class="month" id="month">
+                        <h5>Monthly</h5>
+                        <input type="checkbox" value="month"
+                        id="monthly">
+                    </div>
+        
+                    <div class="annually">
+                        <h5>Annually</h5>
+                        <input type="checkbox" value="month"
+                        id='annually'>
+                    </div>
+                </div>
+        
+                <div class="net">
+                    <h3>Net Salary</h3>
+                    <input type="text" placeholder='Enter net salary'
+                    id="netInput">
+                </div>
+            </div>
+
+            <!-- Second/Result column where the gross
+            salary will be shown -->
+            <div class="column2">
+                <div class="grossResult">
+                    <h1>Gross Salary: </h1>
+                    <span id="grossResult"></span>
+                </div>
+
+                <div class="kra_nssf">
+                    <h2>KRA: </h2>
+                    <span id="kra"></span>
+                    <h2>NSSF: </h2>
+                    <span id="nssf"></span>
+                    <h2>Personal Relief: </h2>
+                    <span id="personalRelief">28800</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- button -->
+        <button id="calculate" >Calculate</button>
+    </div>
+</body>
+</html>

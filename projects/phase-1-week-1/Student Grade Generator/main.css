@@ -1,0 +1,29 @@
+/* removing defaults */
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styling the container that holds everything */
+body #center{
+    display: flex;
+    flex-direction: column;
+    margin: 230px 0 0 450px;
+}
+/* styling all h4 */
+body #center h4{
+    margin-top: 6px;
+}
+/* basic styling of the button */
+button{
+    cursor: pointer;
+    padding: 3px 6px;
+    background: white;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.25s ease-in-out;
+}
+button:hover{
+    background: orangered;
+    color: white;
+}
